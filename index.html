@@ -30,6 +30,12 @@
   }
   * { margin:0; padding:0; box-sizing:border-box; }
   body { background:var(--bg); color:var(--text); font-family:'Jost', sans-serif; min-height:100vh; }
+body {
+  -webkit-user-select: none;
+  user-select: none;
+  /* Prevents pull-to-refresh on mobile */
+  overscroll-behavior-y: contain; 
+}
 
   /* Nav */
   nav { background:var(--surface); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:50; }
